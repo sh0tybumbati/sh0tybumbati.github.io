@@ -3,125 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sh0tyCode - GitHub Portfolio</title>
+    <title>Sh0tyCode Portfolio</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background Effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
     <div class="container">
+        <!-- Hero Section -->
         <header class="hero">
             <div class="hero-content">
+                <div class="hero-badge">Welcome to my workspace</div>
                 <h1 class="hero-title">Sh0tyCode</h1>
                 <p class="hero-subtitle">Developer & Creator</p>
-                <p class="hero-description">Building interactive experiences and tools, one project at a time</p>
+                <p class="hero-description">Building interactive experiences and tools, one project at a time.</p>
                 <div class="hero-links">
-                    <a href="https://github.com/sh0tybumbati" class="hero-link" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
+                    <a href="https://github.com/sh0tybumbati" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Profile
                     </a>
-                    <a href="#featured" class="hero-link">
-                        <i class="fas fa-star"></i> Featured Projects
+                    <a href="#featured" class="btn btn-secondary">
+                        <i class="fas fa-rocket"></i> Explore Projects
                     </a>
                 </div>
-            </div>
-            <div class="hero-wave">
-                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
-                </svg>
             </div>
         </header>
 
         <main class="main-content">
-            <!-- Featured Projects Section -->
-            <section id="featured" class="featured-section">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Live projects hosted on GitHub Pages</p>
-                </div>
-                <div id="featuredProjects" class="featured-grid"></div>
-            </section>
-
-            <div class="section-divider"></div>
-
-            <div class="search-section">
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search repositories..." id="searchInput">
-                    <i class="fas fa-search search-icon"></i>
-                </div>
-                <div class="filter-container">
-                    <button class="filter-btn active" data-filter="all">
-                        <i class="fas fa-th-large"></i> All
-                    </button>
-                    <button class="filter-btn" data-filter="javascript">
-                        <i class="fab fa-js-square"></i> JavaScript
-                    </button>
-                    <button class="filter-btn" data-filter="python">
-                        <i class="fab fa-python"></i> Python
-                    </button>
-                    <button class="filter-btn" data-filter="html">
-                        <i class="fab fa-html5"></i> HTML
-                    </button>
-                    <button class="filter-btn" data-filter="css">
-                        <i class="fab fa-css3-alt"></i> CSS
-                    </button>
-                    <button class="filter-btn" data-filter="java">
-                        <i class="fab fa-java"></i> Java
-                    </button>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <div class="stat-card">
-                    <i class="fas fa-code-branch"></i>
-                    <div class="stat-content">
+            <!-- Stats Section (Moved up for impact) -->
+            <div class="stats-grid">
+                <div class="stat-card glass-panel">
+                    <i class="fas fa-code-branch stat-icon"></i>
+                    <div class="stat-details">
                         <span class="stat-number" id="totalRepos">-</span>
                         <span class="stat-label">Repositories</span>
                     </div>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-star"></i>
-                    <div class="stat-content">
+                <div class="stat-card glass-panel">
+                    <i class="fas fa-star stat-icon"></i>
+                    <div class="stat-details">
                         <span class="stat-number" id="totalStars">-</span>
-                        <span class="stat-label">Stars</span>
+                        <span class="stat-label">Total Stars</span>
                     </div>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-code-branch"></i>
-                    <div class="stat-content">
-                        <span class="stat-number" id="totalForks">-</span>
-                        <span class="stat-label">Forks</span>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-code"></i>
-                    <div class="stat-content">
+                <div class="stat-card glass-panel">
+                    <i class="fas fa-code stat-icon"></i>
+                    <div class="stat-details">
                         <span class="stat-number" id="totalLanguages">-</span>
                         <span class="stat-label">Languages</span>
                     </div>
                 </div>
             </div>
 
-            <div id="loading" class="loading">
-                <div class="spinner"></div>
-                <p>Loading repositories...</p>
-            </div>
+            <!-- Featured Projects Section -->
+            <section id="featured" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Live apps deployed to GitHub Pages</p>
+                </div>
+                <div id="featuredProjects" class="featured-grid">
+                    <!-- Featured injected here via JS -->
+                </div>
+            </section>
 
-            <div id="error" class="error-message" style="display: none;">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>Failed to load repositories. Please try again later.</p>
-            </div>
+            <div class="divider"></div>
 
-            <div id="noResults" class="no-results" style="display: none;">
-                <i class="fas fa-search"></i>
-                <p>No repositories found matching your search.</p>
-            </div>
+            <!-- All Repositories Section -->
+            <section id="all-repos" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">All Repositories</h2>
+                    <p class="section-subtitle">Explore my open source work</p>
+                </div>
 
-            <div id="reposGrid" class="repos-grid"></div>
+                <div class="controls-panel glass-panel">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search repositories..." id="searchInput">
+                    </div>
+                    <div class="filter-wrapper" id="filterContainer">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <!-- Language filters injected here via JS -->
+                    </div>
+                </div>
+
+                <div id="loading" class="state-message">
+                    <div class="spinner"></div>
+                    <p>Fetching repositories...</p>
+                </div>
+
+                <div id="error" class="state-message error" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Failed to load repositories. Please try again later.</p>
+                </div>
+
+                <div id="noResults" class="state-message" style="display: none;">
+                    <i class="fas fa-ghost"></i>
+                    <p>No repositories found matching your search.</p>
+                </div>
+
+                <div id="reposGrid" class="repos-grid">
+                    <!-- Repos injected here via JS -->
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025 Sh0tyCode. Built with <i class="fas fa-heart"></i> and GitHub API</p>
+            <p>&copy; 2026 Sh0tyCode. Powered by the GitHub API.</p>
         </footer>
     </div>
 
