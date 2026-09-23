@@ -53,7 +53,7 @@ class GitHubPortfolio {
             }
             
             const data = await response.json();
-            const excludedRepos = [this.username, `${this.username}.github.io`, 'Sh0tyCode', 'polis'];
+            const excludedRepos = [this.username, `${this.username}.github.io`, 'Sh0tyCode', 'polis', 'telemetry-dashboard'];
             
             this.allRepos = data.filter(repo => 
                 !repo.fork && 
