@@ -59,11 +59,40 @@
                 </div>
             </div>
 
+            <!-- Spotlight: one hand-picked thing, above Games -->
+            <section id="spotlight" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Featured</h2>
+                    <p class="section-subtitle">Something to scroll through</p>
+                </div>
+                <div class="featured-grid" style="grid-template-columns: 1fr;">
+                    <div class="featured-card">
+                        <div class="featured-image" style="background-image: url('assets/img/dimensions.jpg'); height: 260px;"></div>
+                        <div class="featured-content">
+                            <div style="margin-bottom: 1rem;">
+                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Which Dimension?</h3>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">explainer</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">animation</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">physics</span>
+                                </div>
+                            </div>
+                            <p class="featured-description">A scrolling, animated explainer about the different things people mean by &ldquo;dimension&rdquo;. Axes and time, parallel timelines, scale, and layers of matter that share our space but never touch.</p>
+                            <div class="featured-links">
+                                <a href="dimensions/" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+                                    <i class="fas fa-infinity"></i> Open the explainer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
             <!-- Games Section: hand-maintained, since the game repos are private and the GitHub API can't list them -->
             <section id="games" class="section">
                 <div class="section-header">
                     <h2 class="section-title">Games</h2>
-                    <p class="section-subtitle">Play free in your browser on itch.io</p>
+                    <p class="section-subtitle">Play free in your browser</p>
                 </div>
                 <div class="featured-grid">
                     <div class="featured-card">
@@ -119,6 +148,23 @@
                             <div class="featured-links">
                                 <a href="https://sh0tybumbati.itch.io/flapjacks" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
                                     <i class="fas fa-gamepad"></i> Play on itch.io
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-image" style="background-image: url('assets/img/kleros.jpg');"></div>
+                        <div class="featured-content">
+                            <div style="margin-bottom: 1rem;">
+                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Kleros</h3>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">colony sim</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">co-op</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">survival</span>
+                                </div>
+                            </div>
+                            <p class="featured-description">A multiplayer colony survival RPG in the spirit of RimWorld, set on the shores of Ancient Greece. Up to four players build a settlement from scratch in an endless Mediterranean wilderness.</p>
+                            <div class="featured-links">
+                                <a href="https://run.world/sh0tybumbati/kleros" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+                                    <i class="fas fa-gamepad"></i> Play on RUN.world
                                 </a>
                             </div>
                         </div>
