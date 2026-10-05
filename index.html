@@ -3,233 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sh0tyCode Portfolio</title>
-    <!-- Modern Fonts -->
+    <title>Sh0ty — games, tools &amp; strange explainers</title>
+    <meta name="description" content="Sh0tybumbati's portfolio: browser games, desktop apps, tools and animated explainers.">
+    <meta name="theme-color" content="#0d0c0b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <!-- Background Effects -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
+    <div class="grain" aria-hidden="true"></div>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <header class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Sh0tybumbati</h1>
-                <p class="hero-subtitle">code monkey</p>
-                <div class="hero-links">
-                    <a href="https://github.com/sh0tybumbati" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-github"></i> GitHub Profile
-                    </a>
-                    <a href="#featured" class="btn btn-secondary">
-                        <i class="fas fa-rocket"></i> Explore Projects
-                    </a>
-                </div>
-            </div>
-        </header>
+    <header class="hero">
+        <nav class="topbar" aria-label="Elsewhere">
+            <span class="mono">sh0tybumbati</span>
+            <span class="topbar-links">
+                <a href="#wall">Work</a>
+                <a href="#bench">Workbench</a>
+                <a href="#archive">Archive</a>
+                <a href="https://github.com/sh0tybumbati" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+            </span>
+        </nav>
 
-        <main class="main-content">
-            <!-- Stats Section (Moved up for impact) -->
-            <div class="stats-grid">
-                <div class="stat-card glass-panel">
-                    <i class="fas fa-code-branch stat-icon"></i>
-                    <div class="stat-details">
-                        <span class="stat-number" id="totalRepos">-</span>
-                        <span class="stat-label">Repositories</span>
-                    </div>
-                </div>
-                <div class="stat-card glass-panel">
-                    <i class="fas fa-star stat-icon"></i>
-                    <div class="stat-details">
-                        <span class="stat-number" id="totalStars">-</span>
-                        <span class="stat-label">Total Stars</span>
-                    </div>
-                </div>
-                <div class="stat-card glass-panel">
-                    <i class="fas fa-code stat-icon"></i>
-                    <div class="stat-details">
-                        <span class="stat-number" id="totalLanguages">-</span>
-                        <span class="stat-label">Languages</span>
-                    </div>
-                </div>
-            </div>
+        <h1 class="wordmark" aria-label="Sh0ty">
+            <span>SH</span><span class="zero">0</span><span>TY</span>
+        </h1>
+        <p class="lede">Games, tools and strange explainers. Mostly built to run in a browser tab, some to live on your desktop.</p>
 
-            <!-- Spotlight: one hand-picked thing, above Games -->
-            <section id="spotlight" class="section">
-                <div class="section-header">
-                    <h2 class="section-title">Featured</h2>
-                    <p class="section-subtitle">Something to scroll through</p>
-                </div>
-                <div class="featured-grid" style="grid-template-columns: 1fr;">
-                    <div class="featured-card">
-                        <div class="featured-image" style="background-image: url('assets/img/dimensions.jpg'); height: 260px;"></div>
-                        <div class="featured-content">
-                            <div style="margin-bottom: 1rem;">
-                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Which Dimension?</h3>
-                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">explainer</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">animation</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">physics</span>
-                                </div>
-                            </div>
-                            <p class="featured-description">A scrolling, animated explainer about the different things people mean by &ldquo;dimension&rdquo;. Axes and time, parallel timelines, scale, and layers of matter that share our space but never touch.</p>
-                            <div class="featured-links">
-                                <a href="dimensions/" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                                    <i class="fas fa-infinity"></i> Open the explainer
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="hero-cta">
+            <a class="pill pill-solid" href="#wall">See the work <span aria-hidden="true">↓</span></a>
+            <a class="pill" href="https://sh0tybumbati.itch.io" target="_blank" rel="noopener">itch.io&nbsp;↗</a>
+            <a class="pill" href="https://run.world/sh0tybumbati" target="_blank" rel="noopener">run.world&nbsp;↗</a>
+        </div>
+    </header>
 
-            <div class="divider"></div>
-
-            <!-- Games Section: hand-maintained, since the game repos are private and the GitHub API can't list them -->
-            <section id="games" class="section">
-                <div class="section-header">
-                    <h2 class="section-title">Games</h2>
-                    <p class="section-subtitle">Play free in your browser</p>
-                </div>
-                <div class="featured-grid">
-                    <div class="featured-card">
-                        <div class="featured-image" style="background-image: url('assets/img/silicon-tycoon.jpg');"></div>
-                        <div class="featured-content">
-                            <div style="margin-bottom: 1rem;">
-                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Silicon Tycoon</h3>
-                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">tycoon</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">simulation</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">browser</span>
-                                </div>
-                            </div>
-                            <p class="featured-description">A semiconductor design and manufacturing tycoon. Design dies, run fabs, and fight for market share.</p>
-                            <div class="featured-links">
-                                <a href="https://sh0tybumbati.itch.io/silicon-tycoon" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                                    <i class="fas fa-gamepad"></i> Play on itch.io
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-card">
-                        <div class="featured-image" style="background-image: url('assets/img/feature-creep.jpg');"></div>
-                        <div class="featured-content">
-                            <div style="margin-bottom: 1rem;">
-                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Feature Creep</h3>
-                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">deckbuilder</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">card game</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">comedy</span>
-                                </div>
-                            </div>
-                            <p class="featured-description">A deckbuilder about never, ever finishing your game. Draw terrible requirements, ship features, chase Legendaries.</p>
-                            <div class="featured-links">
-                                <a href="https://sh0tybumbati.itch.io/feature-creep" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                                    <i class="fas fa-gamepad"></i> Play on itch.io
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-card">
-                        <div class="featured-image" style="background-image: url('assets/img/flapjacks.jpg');"></div>
-                        <div class="featured-content">
-                            <div style="margin-bottom: 1rem;">
-                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Flapjacks</h3>
-                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">cooking</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">physics</span>
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">3d</span>
-                                </div>
-                            </div>
-                            <p class="featured-description">A pancake physics cooking game. Flip real pancakes, serve the breakfast rush from a food truck, and work your way up to a city brunch house.</p>
-                            <div class="featured-links">
-                                <a href="https://sh0tybumbati.itch.io/flapjacks" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                                    <i class="fas fa-gamepad"></i> Play on itch.io
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-card">
-                        <div class="featured-image" style="background-image: url('assets/img/kleros.jpg');"></div>
-                        <div class="featured-content">
-                            <div style="margin-bottom: 1rem;">
-                                <h3 class="featured-title" style="margin-bottom: 0.5rem;">Kleros</h3>
-                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">colony sim</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">co-op</span><span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 99px; color: var(--accent-secondary); border: 1px solid rgba(255,255,255,0.1);">survival</span>
-                                </div>
-                            </div>
-                            <p class="featured-description">A multiplayer colony survival RPG in the spirit of RimWorld, set on the shores of Ancient Greece. Up to four players build a settlement from scratch in an endless Mediterranean wilderness.</p>
-                            <div class="featured-links">
-                                <a href="https://run.world/sh0tybumbati/kleros" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                                    <i class="fas fa-gamepad"></i> Play on RUN.world
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- Featured Projects Section -->
-            <section id="featured" class="section">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Live apps deployed to GitHub Pages</p>
-                </div>
-                <div id="featuredProjects" class="featured-grid">
-                    <!-- Featured injected here via JS -->
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- All Repositories Section -->
-            <section id="all-repos" class="section">
-                <div class="section-header">
-                    <h2 class="section-title">All Repositories</h2>
-                    <p class="section-subtitle">Explore my open source work</p>
-                </div>
-
-                <div class="controls-panel glass-panel">
-                    <div class="search-wrapper">
-                        <i class="fas fa-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="Search repositories..." id="searchInput">
-                    </div>
-                    <div class="filter-wrapper" id="filterContainer">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <!-- Language filters injected here via JS -->
-                    </div>
-                </div>
-
-                <div id="loading" class="state-message">
-                    <div class="spinner"></div>
-                    <p>Fetching repositories...</p>
-                </div>
-
-                <div id="error" class="state-message error" style="display: none;">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <p>Failed to load repositories. Please try again later.</p>
-                </div>
-
-                <div id="noResults" class="state-message" style="display: none;">
-                    <i class="fas fa-ghost"></i>
-                    <p>No repositories found matching your search.</p>
-                </div>
-
-                <div id="reposGrid" class="repos-grid">
-                    <!-- Repos injected here via JS -->
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2026 Sh0tyCode. Powered by the GitHub API.</p>
-        </footer>
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span>Kleros</span><span>Silicon Tycoon</span><span>Feature Creep</span><span>Flapjacks</span><span>Ascendance</span><span>Cantina</span><span>Which Dimension?</span><span>Holodeck</span>
+            <span>Kleros</span><span>Silicon Tycoon</span><span>Feature Creep</span><span>Flapjacks</span><span>Ascendance</span><span>Cantina</span><span>Which Dimension?</span><span>Holodeck</span>
+        </div>
     </div>
+
+    <main>
+        <!-- The wall: hand-maintained, since most game repos are private and the GitHub API can't list them -->
+        <section id="wall" class="wall-section">
+            <div class="sec-head">
+                <p class="mono kicker">01 / Work</p>
+                <h2>The wall</h2>
+            </div>
+
+            <div class="wall">
+                <a class="tile t-kleros" style="--c:#d19143" href="https://run.world/sh0tybumbati/kleros" target="_blank" rel="noopener">
+                    <div class="media" style="background-image:url('assets/img/kleros.jpg')"></div>
+                    <div class="cap">
+                        <span class="mono tag">Co-op colony RPG · play on run.world</span>
+                        <h3>Kleros</h3>
+                        <p>A multiplayer colony survival RPG in the spirit of RimWorld, set on the shores of Ancient Greece. Up to four players build a settlement from scratch in an endless Mediterranean wilderness.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="tile t-silicon" style="--c:#5b8def" href="https://sh0tybumbati.itch.io/silicon-tycoon" target="_blank" rel="noopener">
+                    <div class="media media-light" style="background-image:url('assets/img/silicon-tycoon.jpg')"></div>
+                    <div class="cap">
+                        <span class="mono tag">Tycoon · browser, Windows, Linux</span>
+                        <h3>Silicon Tycoon</h3>
+                        <p>A semiconductor design and manufacturing tycoon. Design dies, run fabs, and fight for market share.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="tile t-creep" style="--c:#f0b429" href="https://sh0tybumbati.itch.io/feature-creep" target="_blank" rel="noopener">
+                    <div class="media" style="background-image:url('assets/img/feature-creep.jpg')"></div>
+                    <div class="cap">
+                        <span class="mono tag">Deckbuilder · comedy</span>
+                        <h3>Feature Creep</h3>
+                        <p>A deckbuilder about never, ever finishing your game. Draw terrible requirements, ship features, chase Legendaries.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="tile t-flap" style="--c:#ff8a3d" href="https://sh0tybumbati.itch.io/flapjacks" target="_blank" rel="noopener">
+                    <div class="media" style="background-image:url('assets/img/flapjacks.jpg')"></div>
+                    <div class="cap">
+                        <span class="mono tag">Cooking · physics · 3D</span>
+                        <h3>Flapjacks</h3>
+                        <p>A pancake physics cooking game. Flip real pancakes, serve the breakfast rush from a food truck, and work up to a city brunch house.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="tile t-dim" style="--c:#7ad7c1" href="dimensions/" target="_blank" rel="noopener">
+                    <div class="media" style="background-image:url('assets/img/dimensions.jpg')"></div>
+                    <div class="cap">
+                        <span class="mono tag">Scroll explainer</span>
+                        <h3>Which Dimension?</h3>
+                        <p>A scrolling, animated explainer about the different things people mean by &ldquo;dimension&rdquo;: axes and time, parallel timelines, scale, and layers of matter.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+
+                <!-- Private repo: no link, no screenshot. Typographic poster instead of a fake one. -->
+                <div class="tile t-asc poster" style="--c:#c8453a">
+                    <div class="poster-art" aria-hidden="true">
+                        <span>A</span>
+                    </div>
+                    <div class="cap">
+                        <span class="mono tag">Voxel action RPG · in development</span>
+                        <h3>Ascendance</h3>
+                        <p>A Rust and Bevy ARPG on a bounded, cylindrical voxel world. Dig, craft weapons from cards and materials, build bases, survive.</p>
+                    </div>
+                </div>
+
+                <a class="tile t-cantina poster" style="--c:#e0457b" href="https://github.com/sh0tybumbati/Okibar" target="_blank" rel="noopener">
+                    <div class="poster-art" aria-hidden="true">
+                        <span>C</span>
+                    </div>
+                    <div class="cap">
+                        <span class="mono tag">Desktop app · Electron</span>
+                        <h3>Cantina</h3>
+                        <p>Karaoke venue management with a live queue. Tables, the TV and the bar each get their own synced screen.</p>
+                    </div>
+                    <span class="go" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="bench" class="bench-section">
+            <div class="sec-head">
+                <p class="mono kicker">02 / Workbench</p>
+                <h2>Tools &amp; experiments</h2>
+                <p class="sec-sub">Small things that work, live in the browser.</p>
+            </div>
+
+            <ul class="bench">
+                <li><a href="https://sh0tybumbati.github.io/holodeck/" target="_blank" rel="noopener"><span class="b-name">Holodeck</span><span class="b-desc">A simple CAD tool for 3D printing</span><span class="mono b-tag">cad</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/yielddesk/" target="_blank" rel="noopener"><span class="b-name">YieldDesk</span><span class="b-desc">Semiconductor yield and wafer cost calculator</span><span class="mono b-tag">engineering</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/Kamen-Ranger/" target="_blank" rel="noopener"><span class="b-name">Kamen Ranger</span><span class="b-desc">Physics-based electric bike range estimator</span><span class="mono b-tag">physics</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/100k-billion-poems/" target="_blank" rel="noopener"><span class="b-name">100,000 Billion Poems</span><span class="b-desc">Queneau&rsquo;s sonnets, with a 3D page-flipping interface</span><span class="mono b-tag">poetry</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/Anglish-Word-hoard/" target="_blank" rel="noopener"><span class="b-name">Anglish Word-hoard</span><span class="b-desc">Interactive dictionary of English words with Germanic roots</span><span class="mono b-tag">language</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/bom-tracker/" target="_blank" rel="noopener"><span class="b-name">BOM Tracker</span><span class="b-desc">Bill of materials with CSV import/export and multi-currency</span><span class="mono b-tag">tool</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/budget-tracker/" target="_blank" rel="noopener"><span class="b-name">Budget Tracker</span><span class="b-desc">Personal finance with timeline and calendar views</span><span class="mono b-tag">tool</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://sh0tybumbati.github.io/life-smp-stats-tracker/" target="_blank" rel="noopener"><span class="b-name">Life SMP Stats</span><span class="b-desc">Player stats across nine seasons of the Life Series</span><span class="mono b-tag">minecraft</span><span class="b-go" aria-hidden="true">↗</span></a></li>
+            </ul>
+        </section>
+
+        <section id="archive" class="archive-section">
+            <div class="sec-head">
+                <p class="mono kicker">03 / Archive</p>
+                <h2>Everything public</h2>
+                <p class="sec-sub">Pulled live from GitHub.</p>
+            </div>
+
+            <div class="controls">
+                <input type="search" class="search" placeholder="Search repositories" id="searchInput" aria-label="Search repositories">
+                <div class="filters" id="filterContainer" role="group" aria-label="Filter by language">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                </div>
+            </div>
+
+            <p id="loading" class="state mono">Fetching repositories…</p>
+            <p id="error" class="state mono" hidden>Couldn&rsquo;t reach GitHub. The rest of the page still works.</p>
+            <p id="noResults" class="state mono" hidden>Nothing matches that.</p>
+            <ul id="reposGrid" class="archive"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-big" aria-hidden="true">SH0TY</div>
+        <div class="footer-row">
+            <span class="mono">&copy; 2026 Sh0tybumbati</span>
+            <span class="footer-links">
+                <a href="https://github.com/sh0tybumbati" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://sh0tybumbati.itch.io" target="_blank" rel="noopener">itch.io</a>
+                <a href="https://run.world/sh0tybumbati" target="_blank" rel="noopener">run.world</a>
+            </span>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
