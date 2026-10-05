@@ -124,6 +124,7 @@ a.tile:hover { transform: translateY(-6px); border-color: var(--c); box-shadow: 
 .t-creep   { grid-column: span 5; }
 .t-flap    { grid-column: span 7; }
 .t-dim     { grid-column: span 5; }
+.t-nyb     { grid-column: span 12; }
 .t-asc     { grid-column: span 6; }
 .t-cantina { grid-column: span 6; }
 
@@ -219,7 +220,7 @@ a.poster:hover .poster-art span { transform: translate(22%, -18%) rotate(-3deg);
 /* ---------- small screens ---------- */
 @media (max-width: 860px) {
     .wall { grid-template-columns: 1fr; }
-    .tile, .t-kleros, .t-silicon, .t-creep, .t-flap, .t-dim, .t-asc, .t-cantina { grid-column: auto; grid-row: auto; }
+    .tile, .t-kleros, .t-silicon, .t-creep, .t-flap, .t-dim, .t-nyb, .t-asc, .t-cantina { grid-column: auto; grid-row: auto; }
     .t-kleros .media { min-height: 18rem; }
     .go { opacity: 1; transform: none; background: var(--c); }
     .bench a { grid-template-columns: 1fr auto; gap: .2rem 1rem; }
