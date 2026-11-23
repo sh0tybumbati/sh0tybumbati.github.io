@@ -135,6 +135,7 @@ a.tile:hover { transform: translateY(-6px); border-color: var(--c); box-shadow: 
     transition: transform .8s cubic-bezier(.2,.7,.2,1);
 }
 .t-kleros .media { min-height: 26rem; }
+.t-asc .media { min-height: 17rem; }
 .t-flap .media, .t-dim .media { min-height: 11rem; }
 .media-light { background-color: #fbfbf9; background-size: 100% auto; background-position: center; background-repeat: no-repeat; }
 a.tile:hover .media { transform: scale(1.05); }
