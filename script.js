@@ -4,7 +4,9 @@
 
 const USERNAME = 'sh0tybumbati';
 // Repos that are already shown elsewhere on the page, or that are just plumbing.
-const EXCLUDED = [USERNAME, `${USERNAME}.github.io`, 'Sh0tyCode', 'polis', 'telemetry-dashboard'];
+const EXCLUDED = [USERNAME, `${USERNAME}.github.io`, 'Sh0tyCode', 'polis', 'telemetry-dashboard',
+    // Other people's projects I only hold copies of.
+    'odysseus', 'mii-creator-draw-edition', 'Animated-Ideas-The-Mod'];
 
 const LANG_COLORS = {
     JavaScript: '#f1e05a', Python: '#3572A5', Java: '#b07219', HTML: '#e34c26', CSS: '#563d7c',

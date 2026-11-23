@@ -238,3 +238,17 @@ a.poster:hover .poster-art span { transform: translate(22%, -18%) rotate(-3deg);
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .js .hero > *, .js .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- notes (devlog pages) ---------- */
+.note-top { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem clamp(1.25rem, 5vw, 4rem); color: var(--muted); }
+.note-top a:hover { color: var(--paper); }
+.note { max-width: 44rem; margin: 3rem auto 6rem; padding: 0 clamp(1.25rem, 5vw, 2rem); }
+.note h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.02; letter-spacing: -0.03em; margin: .5rem 0 2rem; }
+.note h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.02em; margin: 3rem 0 1rem; }
+.note p, .note li { font-size: 1.08rem; line-height: 1.65; color: color-mix(in srgb, var(--paper) 88%, transparent); margin-bottom: 1.1rem; }
+.note ul { padding-left: 1.25rem; list-style: disc; }
+.note a { color: var(--hot); text-decoration: underline; }
+.note code { font-family: var(--mono); font-size: .9em; background: var(--ink-2); padding: .1em .35em; border-radius: .3em; }
+.note figure { margin: 1.75rem 0; }
+.note img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: .9rem; }
+.note figcaption { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .5rem; }
